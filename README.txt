@@ -1,0 +1,1 @@
+Buka home.html untuk beranda. Ganti gambar di assets/comics/chapter1/ untuk mengisi komik.

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="id">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chapter 1 — The Ringmaster</title><link rel="stylesheet" href="assets/style.css"></head>
+<body>
+  <div class="topbar card">
+    <div class="reader-header container">
+      <div><button class="btn backHome">← Back</button><span style="margin-left:12px;font-weight:700">Chapter 1 — Prolog</span></div>
+      <div class="reader-controls">
+        <button class="btn secondary" id="prevChapter">Prev</button>
+        <button class="btn" id="nextChapter">Next</button>
+        <button class="btn" id="themeToggle">☼</button>
+      </div>
+    </div>
+  </div>
+  <main class="container comic-container">
+    <div class="card comic-pages" id="pages"></div>
+  </main>
+  <script>
+    const pages = ['assets/comics/chapter1/page1.jpg', 'assets/comics/chapter1/page2.jpg', 'assets/comics/chapter1/page3.jpg', 'assets/comics/chapter1/page4.jpg', 'assets/comics/chapter1/page5.jpg', 'assets/comics/chapter1/page5.jpg', 'assets/comics/chapter1/page6.jpg', 'assets/comics/chapter1/page7.jpg', 'assets/comics/chapter1/page8.jpg', 'assets/comics/chapter1/page9.jpg', 'assets/comics/chapter1/page10.jpg', 'assets/comics/chapter1/page11.jpg', 'assets/comics/chapter1/page12.jpg', 'assets/comics/chapter1/page13.jpg'];
+    const container = document.getElementById('pages');
+    pages.forEach(p=>{const img=document.createElement('img');img.src=p;container.appendChild(img);});
+  </script>
+<script src="assets/script.js"></script>
+</body>
+</html>
